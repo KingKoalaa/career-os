@@ -2,139 +2,156 @@
 
 ## Purpose
 
-This document provides the high-level context for Career OS.
+Career OS is a long-term personal operating system designed to help professionals manage every aspect of their career through structured knowledge, reusable assets, workflow automation, and operational systems.
 
-It is intended to quickly onboard developers, AI assistants, and future contributors before implementation begins.
+The project prioritizes:
 
-Read this document before working on the project.
-
----
-
-# What is Career OS?
-
-Career OS is a personal career operating system designed to centralize professional knowledge, achievements, resumes, certifications, portfolio assets, and job application workflows into a single structured platform.
-
-Although initially built around the creator's career, the architecture is intentionally designed so it can later support additional users and profiles.
-
-Career OS is both:
-
-- A real productivity application.
-- A flagship software engineering portfolio project.
-
----
-
-# Vision
-
-Create a production-quality application that enables users to manage every aspect of their professional career from one place.
-
-Career OS should eventually support:
-
-- Knowledge management
-- Resume generation
-- Cover letter generation
-- Portfolio management
-- Job application tracking
-- Interview preparation
-- AI-assisted career coaching
-- Workflow automation
-
----
-
-# Primary Design Principle
-
-Build for one.
-
-Design for many.
-
-The application should be optimized around the creator's career first while maintaining an architecture that can support multiple users in the future.
-
----
-
-# Current Development Phase
-
-Current Phase:
-
-Repository Foundation
-
-Current Milestone:
-
-Milestone 1 — Foundation
-
-Current Status:
-
-Preparing for implementation.
-
-No production application code has been developed yet.
-
----
-
-# Technology Direction
-
-Career OS will prioritize:
-
-- Simplicity
+- Replaceability
 - Maintainability
-- Performance
-- Modular architecture
+- Professional engineering practices
+- Incremental development
+- Small, reviewable implementation tasks
 
-The technology stack should remain lightweight and modern.
+Career OS is developed as both:
 
-Framework decisions should avoid unnecessary complexity and dependency bloat.
-
----
-
-# Repository Structure
-
-```
-career-os/
-
-app/
-docs/
-prompts/
-public/
-services/
-templates/
-tests/
-tools/
-workspace/
-```
-
-Each top-level folder has a single responsibility.
-
-Repository architecture should remain stable throughout development.
+- A production software project
+- A portfolio demonstrating professional software engineering and operations design
 
 ---
 
-# Data Model
+# Canonical Repository
 
-Workspace data follows these rules:
+GitHub
 
-- One profile = one folder.
-- One entity = one JSON file.
+https://github.com/KingKoalaa/career-os
 
-Knowledge should remain portable and human-readable.
+This repository is the canonical source of truth for Career OS.
 
-Avoid proprietary storage formats where possible.
+The repository URL is provided as project reference only.
+
+AI assistants should **not assume live access** to the repository unless explicitly provided by the user.
+
+Implementation decisions must always be based on:
+
+1. The attached Engineering Specification.
+2. The attached Architecture Decision Records (ADRs).
+3. The user's current working repository.
+4. This Project Context document.
+
+---
+
+# Documentation Authority
+
+Career OS follows a strict documentation hierarchy.
+
+Highest priority
+
+1. Engineering Specification (Current Task)
+
+↓
+
+2. Architecture Decision Records (ADR)
+
+↓
+
+3. Project Context
+
+↓
+
+4. Claude Engineering Guide
+
+↓
+
+5. Existing Repository
+
+If documentation conflicts occur:
+
+- Stop implementation.
+- Explain the conflict.
+- Ask for clarification.
+
+Never resolve architectural conflicts independently.
+
+---
+
+# Engineering Philosophy
+
+Career OS follows several permanent principles.
+
+- Architecture before implementation.
+- Small engineering tasks over large milestones.
+- One task.
+- One review.
+- One commit.
+- One push.
+- Every implementation must be independently reviewable and reversible.
+
+Business functionality should never be introduced outside the current Engineering Specification.
+
+---
+
+# Architectural Principles
+
+Architecture is considered frozen unless modified by an approved ADR.
+
+Claude must never:
+
+- redesign repository architecture
+- introduce new architectural patterns
+- reorganize project structure
+- expand implementation scope
+
+without explicit instruction.
+
+---
+
+# User Experience Philosophy
+
+Career OS is a professional operating system.
+
+It should feel similar to:
+
+- Linear
+- Notion
+- Raycast
+- GitHub
+
+It should **not** resemble:
+
+- AdminLTE
+- Bootstrap Admin
+- Traditional CRM software
+- ERP dashboards
+
+User interface decisions are governed by ADR-002.
 
 ---
 
 # Development Workflow
 
-Every feature follows the same lifecycle:
+Every implementation follows the same workflow.
 
-Product Backlog
-
-↓
-
-Task Specification
+Engineering Specification
 
 ↓
 
-Implementation
+Claude Implementation
 
 ↓
 
-Review
+ChatGPT Architecture & Code Review
+
+↓
+
+Repository Merge
+
+↓
+
+Verification
+
+- npm install
+- npm run dev
+- Browser verification
 
 ↓
 
@@ -148,73 +165,36 @@ Push
 
 Update CHANGELOG
 
-No implementation should skip the task specification stage.
+↓
+
+Next Engineering Specification
 
 ---
 
-# Engineering Standards
+# Repository State
 
-Implementation is governed by:
+Claude does not have live access to the repository unless explicitly provided.
 
-- Claude Engineering Guide
-- Task Specification
-- Repository Architecture
-- Architecture Decision Records (ADR)
+Every implementation should be treated as a patch against the user's current working tree.
 
-Task specifications define **what** to build.
-
-The Engineering Guide defines **how** to build it.
+Claude must remind the user to compare generated files against the current repository before merging.
 
 ---
 
-# Current Documentation
+# Current Development Strategy
 
-The repository currently includes:
+Career OS is developed incrementally.
 
-- Project Charter
-- Career Strategy
-- Professional Evidence Library
-- Master Resume
-- Credit Investigation Operations Transformation
-- BrightFlow Digital Operations System
-- Certifications Master List
-- Portfolio Website Knowledge Base
-- Employer Problem Library
-- Product Backlog
-- Claude Engineering Guide
-- Task Specifications
-- Master Implementation Prompt
+Milestones are business objectives.
 
-These documents form the knowledge base that will power future application features.
+Engineering Tasks are implementation units.
 
----
+Each Engineering Task should:
 
-# Long-Term Goal
+- have one objective
+- modify a limited number of files
+- be reviewable in isolation
+- be reversible
+- remain within the approved scope
 
-Career OS should demonstrate the same level of engineering discipline expected from a professional software product.
-
-Every implementation should improve the application while preserving architecture, maintainability, and code quality.
-
-The repository should showcase:
-
-- Clean Architecture
-- Professional Documentation
-- Thoughtful Software Design
-- AI-Assisted Engineering
-- Sustainable Development Practices
-
----
-
-# Definition of Success
-
-Career OS is successful when:
-
-- Every professional asset exists in one system.
-- AI can generate resumes and cover letters using structured knowledge.
-- Job applications become repeatable workflows.
-- New features can be added without major refactoring.
-- The project serves as a flagship portfolio demonstrating software engineering, operations, and workflow automation skills.
-
----
-
-_End of Project Context_
+This strategy minimizes implementation drift and improves long-term maintainability.

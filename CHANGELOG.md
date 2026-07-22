@@ -2,74 +2,52 @@
 
 All notable changes to Career OS will be documented in this file.
 
-This project follows a milestone-based development process.
+This project follows an incremental engineering workflow where each implementation task is independently reviewed, tested, committed, and released.
 
 ---
 
-# [Unreleased]
-
-No unreleased changes.
-
----
-
-# Milestone 0 — Project Foundation
-
-## M0-001 — Project Bootstrap
+## [Unreleased]
 
 ### Added
 
-- Initialized Career OS using React and Vite.
-- Configured Tailwind CSS.
-- Configured React Router.
-- Configured Vitest using the jsdom environment.
-- Configured Progressive Web App (PWA) support.
-- Established the initial project architecture.
-- Preserved the approved repository structure.
-- Prepared the application for future feature development.
+- Established the initial Career OS project structure.
+- Added repository documentation and engineering standards.
+- Introduced Architecture Decision Records (ADR) to govern project architecture and design.
+- Implemented the application layout foundation using reusable presentation components.
+- Added the following reusable layout components:
+  - AppLayout
+  - Header
+  - Sidebar
+  - WorkspaceContainer
+- Integrated the application layout into the existing RootLayout while preserving the existing routing architecture.
+- Established the permanent visual application frame that future Career OS workspaces will inherit.
 
-### Technical Notes
+### Changed
 
-- Repository architecture frozen.
-- ADR-001 (Replaceability First) adopted.
-- Bootstrap verified successfully.
-- Development environment validated.
+- RootLayout now renders the reusable AppLayout instead of directly rendering routed content.
+- WorkspaceContainer now supports rendering child content while gracefully falling back to placeholder content when no children are provided.
+- Project development workflow refined to use:
+  - Engineering Specifications
+  - Claude implementation
+  - ChatGPT architecture review
+  - Small, reviewable engineering tasks
 
-### Status
+### Verified
 
-✅ Completed
-
----
-
-# Milestone 1 — Application Shell
-
-_Not started._
-
----
-
-# Milestone 2 — Knowledge Repository
-
-_Not started._
-
----
-
-# Milestone 3 — Career Workspace
-
-_Not started._
+- Application builds successfully.
+- Existing routing remains functional.
+- Existing HomePage renders correctly inside the application layout.
+- Existing test suite passes without regression.
+- No routing logic was modified.
+- No navigation logic was introduced.
+- No business functionality was added.
 
 ---
 
-# Milestone 4 — Search Engine
+## Milestone Progress
 
-_Not started._
-
----
-
-# Milestone 5 — Resume Builder
-
-_Not started._
-
----
-
-# Milestone 6 — Portfolio Generator
-
-_Not started._
+| Milestone | Status |
+|-----------|--------|
+| M0 — Project Bootstrap | ✅ Complete |
+| M1-001 — Application Layout | ✅ Complete |
+| M1-002 — Sidebar Navigation | ⏳ Next |

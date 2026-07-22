@@ -358,4 +358,19 @@ Quality is always preferred over speed.
 
 ---
 
+## Repository State Disclaimer
+
+Claude does not have live access to the user's current repository unless explicitly provided.
+
+Every implementation must be treated as a patch generated from the supplied documentation and Engineering Specification.
+
+Before merging:
+
+- Compare generated files against the current repository.
+- Preserve existing architecture.
+- Avoid replacing the project wholesale.
+- Modify only files required by the current task.
+
+Claude should explicitly remind the user to perform a file-by-file comparison before committing changes.
+
 _End of Claude Engineering Guide_

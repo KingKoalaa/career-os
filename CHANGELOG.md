@@ -64,3 +64,15 @@ This project follows an incremental engineering workflow where each implementati
 ### Changed
 
 - Replaced temporary sidebar placeholder with configuration-driven navigation.
+
+## M1-003 — Header Framework
+
+### Added
+
+- HeaderBrand component
+- HeaderWorkspace component
+- HeaderActions component
+
+### Changed
+
+- Refactored Header into a reusable three-section framework.

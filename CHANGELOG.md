@@ -2,107 +2,74 @@
 
 All notable changes to Career OS will be documented in this file.
 
-The project follows a structured release process inspired by **Keep a Changelog** and **Semantic Versioning**, adapted to the development workflow of Career OS.
+This project follows a milestone-based development process.
 
 ---
 
-# Versioning Strategy
+# [Unreleased]
 
-Career OS uses the following version format:
-
-```
-MAJOR.MINOR.PATCH
-```
-
-Example:
-
-```
-1.0.0
-```
-
-- **MAJOR** — Breaking architectural or platform changes.
-- **MINOR** — New features and significant improvements.
-- **PATCH** — Bug fixes, documentation updates, and maintenance.
+No unreleased changes.
 
 ---
 
-# Categories
+# Milestone 0 — Project Foundation
 
-Each release may contain one or more of the following sections.
+## M0-001 — Project Bootstrap
 
 ### Added
 
-New functionality introduced.
+- Initialized Career OS using React and Vite.
+- Configured Tailwind CSS.
+- Configured React Router.
+- Configured Vitest using the jsdom environment.
+- Configured Progressive Web App (PWA) support.
+- Established the initial project architecture.
+- Preserved the approved repository structure.
+- Prepared the application for future feature development.
 
-### Changed
+### Technical Notes
 
-Behavior or implementation that has been modified.
+- Repository architecture frozen.
+- ADR-001 (Replaceability First) adopted.
+- Bootstrap verified successfully.
+- Development environment validated.
 
-### Improved
+### Status
 
-Enhancements to existing functionality.
-
-### Fixed
-
-Bug fixes and corrections.
-
-### Removed
-
-Deprecated functionality removed from the system.
-
-### Documentation
-
-Updates to project documentation.
+✅ Completed
 
 ---
 
-# Unreleased
+# Milestone 1 — Application Shell
 
-## Planned
-
-- Build Milestone 1 Foundation.
-- Implement application shell.
-- Implement repository services.
-- Implement knowledge repository.
-- Implement global search.
-- Implement dashboard.
-- Implement knowledge explorer.
+_Not started._
 
 ---
 
-# Version 0.1.0
-## Repository Foundation
+# Milestone 2 — Knowledge Repository
 
-Release Date
-
-Pending
-
-### Added
-
-- Initial repository architecture.
-- Professional documentation.
-- Development roadmap.
-- Engineering standards.
-- Software architecture.
-- Product requirements.
-- Milestone execution plan.
-- MIT License.
-- Contributing guidelines.
-
-### Documentation
-
-- Repository established.
-- Architecture frozen.
-- Development workflow defined.
+_Not started._
 
 ---
 
-# Future Releases
+# Milestone 3 — Career Workspace
 
-Future releases will continue following this structure.
-
-Every version should explain not only **what changed**, but also **why the change matters** to the overall evolution of Career OS.
+_Not started._
 
 ---
 
-_End of Changelog_
+# Milestone 4 — Search Engine
+
+_Not started._
+
+---
+
+# Milestone 5 — Resume Builder
+
+_Not started._
+
+---
+
+# Milestone 6 — Portfolio Generator
+
+_Not started._

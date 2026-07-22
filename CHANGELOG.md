@@ -51,3 +51,16 @@ This project follows an incremental engineering workflow where each implementati
 | M0 — Project Bootstrap | ✅ Complete |
 | M1-001 — Application Layout | ✅ Complete |
 | M1-002 — Sidebar Navigation | ⏳ Next |
+
+## Milestone 1 Progress
+
+### Added
+
+- Permanent application layout
+- Reusable sidebar navigation
+- Navigation configuration system (`app/config/navigation.js`)
+- NavigationItem reusable component
+
+### Changed
+
+- Replaced temporary sidebar placeholder with configuration-driven navigation.

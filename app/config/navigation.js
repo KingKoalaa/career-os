@@ -20,10 +20,10 @@ import {
  */
 export const navigationConfig = [
     { id: 'home', label: 'Home', icon: Home, path: '/' },
-    { id: 'career', label: 'Career', icon: Briefcase },
-    { id: 'knowledge', label: 'Knowledge', icon: BookOpen },
-    { id: 'projects', label: 'Projects', icon: Rocket },
-    { id: 'automation', label: 'Automation', icon: Workflow },
-    { id: 'assets', label: 'Assets', icon: FolderOpen },
-    { id: 'settings', label: 'Settings', icon: Settings },
+    { id: 'career', label: 'Career', icon: Briefcase, path: '/career' },
+    { id: 'knowledge', label: 'Knowledge', icon: BookOpen, path: '/knowledge' },
+    { id: 'projects', label: 'Projects', icon: Rocket, path: '/projects' },
+    { id: 'automation', label: 'Automation', icon: Workflow, path: '/automation' },
+    { id: 'assets', label: 'Assets', icon: FolderOpen, path: '/assets' },
+    { id: 'settings', label: 'Settings', icon: Settings, path: '/settings' },
 ];

@@ -1,17 +1,16 @@
 /**
  * PageHeader
  *
- * Presentation-only header for the Home page. Static content only —
- * no props, routing, breadcrumbs, search, or actions. This component
- * represents the header region of the page layout structure; it is
- * not yet a configurable API (see ADR-pending: generalize only once
- * a second concrete page requires different header content).
+ * Presentation-only header for a workspace page. Renders the given
+ * `title` and `subtitle` — no routing, breadcrumbs, search, or
+ * actions. Parameterized in TASK-M2-002 so it can serve every
+ * workspace page rather than only Home.
  */
-function PageHeader() {
+function PageHeader({ title, subtitle }) {
   return (
     <header className="mb-8">
-      <h1 className="text-2xl font-semibold text-slate-900">Home</h1>
-      <p className="mt-2 text-sm text-slate-500">Welcome to Career OS.</p>
+      <h1 className="text-2xl font-semibold text-slate-900">{title}</h1>
+      <p className="mt-2 text-sm text-slate-500">{subtitle}</p>
     </header>
   );
 }

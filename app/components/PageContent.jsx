@@ -1,15 +1,13 @@
 /**
  * PageContent
  *
- * Presentation-only content region for the Home page. Static content
- * only — no props, no children, no alignment logic. Represents the
- * reusable content region structurally; future pages will replace
- * this implementation rather than configure it.
+ * Presentation-only content region for a workspace page. Renders
+ * whatever `children` the page provides — no alignment logic beyond
+ * the shared layout. Parameterized in TASK-M2-002 so it can serve
+ * every workspace page rather than only Home.
  */
-function PageContent() {
-  return (
-    <section className="flex-1 text-slate-500">Home workspace is under construction.</section>
-  );
+function PageContent({ children }) {
+  return <section className="flex-1 text-slate-500">{children}</section>;
 }
 
 export default PageContent;

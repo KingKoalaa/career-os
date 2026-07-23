@@ -1,189 +1,132 @@
-# Career OS — Master Implementation Prompt
+# Career OS — Implementation Prompt
 
-You are the Lead Software Engineer responsible for developing Career OS.
+You are implementing a task for the Career OS repository.
 
-This repository is a long-term software engineering portfolio project intended to demonstrate production-quality architecture, maintainability, and professional development practices.
+Repository:
 
-You are expected to write code that could realistically exist inside a commercial software product.
+https://github.com/KingKoalaa/career-os
 
----
-
-# Before Writing Any Code
-
-Read and follow the following project documents in this order.
-
-1. docs/12_Claude_Engineering_Guide.md
-2. The assigned task specification inside docs/backlog/
-3. Any Architecture Decision Records (ADR) if referenced by the task.
-4. CHANGELOG.md (only if the task references previous work).
-
-Never skip these documents.
+This repository is the authoritative source of truth.
 
 ---
 
-# Your Role
+# Repository Access Policy
 
-You are not brainstorming.
+Before making any implementation decisions, inspect the repository.
 
-You are not redesigning the application.
+Read the project documentation from the repository itself.
 
-You are implementing one approved engineering task.
+Do NOT ask me to paste repository files unless ALL of the following are true:
 
-Stay within scope.
+1. GitHub cannot be accessed.
+2. The repository cannot be cloned or inspected.
+3. The required file genuinely cannot be located.
+
+If repository access fails, explain the failure explicitly instead of requesting large portions of the codebase.
+
+The repository—not this conversation—is the source of truth.
+
+---
+
+# Required Documentation
+
+Before writing code, read and follow the current versions of:
+
+docs/projects/
+- 00_PROJECT_CONTEXT.md
+- 01_ARCHITECTURE_AND_REPOSITORY_STATE.md
+- career-os.md
+
+docs/engineering/
+- 12_Claude_Engineering_Guide.md
+
+docs/adr/
+- ADR-001-Replaceability-First.md
+- ADR-002-UX-and-Design-System.md
+
+These documents define the repository architecture, implementation rules, engineering philosophy, coding standards, ADRs, and project history.
+
+Do not rely on assumptions or previous conversations.
+
+---
+
+# Task
+
+The task specification will be supplied separately.
+
+Treat that task markdown as the implementation contract.
+
+Everything outside the task is out of scope unless required for compilation or integration.
+
+---
+
+# Engineering Requirements
+
+Before implementation:
+
+1. Inspect the existing repository.
+2. Understand the current implementation.
+3. Identify affected files.
+4. Determine whether the task conflicts with the repository.
+5. If a conflict exists, stop and explain it instead of silently choosing an interpretation.
+
+---
+
+# Repository Preservation Rules
+
+Preserve the existing architecture.
+
+Do not redesign.
+
+Do not rename folders.
+
+Do not reorganize modules.
+
+Do not introduce new patterns unless explicitly required.
+
+Do not create abstractions "for future use."
+
+Follow YAGNI.
+
+Follow ADR-001.
+
+Follow ADR-002.
 
 ---
 
 # Implementation Rules
 
-Only implement the assigned task.
+Modify only files necessary for the task.
 
-Do NOT:
+Prefer minimal patches.
 
-- Add unrelated features.
-- Rename folders.
-- Reorganize the repository.
-- Rewrite working modules.
-- Change architecture.
-- Introduce new libraries unless absolutely necessary.
+Avoid touching unrelated code.
 
-If additional improvements are discovered:
+Do not refactor unrelated files.
 
-List them separately under:
-
-# Engineering Philosophy
-
-The objective is to build a stable, maintainable system through incremental engineering.
-
-Always prefer:
-
-- Structural composition over configurable APIs.
-- Simple implementations over speculative abstractions.
-- Repository preservation over unnecessary refactoring.
-- Reusable architecture only when multiple concrete implementations exist.
-
-Follow the YAGNI ("You Aren't Gonna Need It") principle.
-
-Do not introduce:
-
-- reusable props
-- render props
-- slots
-- children APIs
-- configurable interfaces
-- extension points
-
-unless they are explicitly required by the Engineering Specification or there are at least two concrete use cases already present in the repository.
-
-Do not generalize from a single implementation.
-
-If only one page, component, or module currently exists, implement only what that implementation requires.
-
-When uncertain between a simpler and a more flexible solution, choose the simpler solution and explain the tradeoff in the Architecture Explanation section.
-
-Every abstraction should solve an existing problem—not a hypothetical future one.
-
-## Recommendations
-
-Do not implement them automatically.
+Do not "improve" surrounding code unless explicitly requested.
 
 ---
 
-# Repository Architecture
+# Output Format
 
-Follow the repository exactly.
+Produce your response in this order:
 
-```
-career-os/
+## Existing Repository Assessment
 
-app/
-services/
-workspace/
-public/
-templates/
-tests/
-docs/
-prompts/
-```
+Summarize:
 
-Do not move files.
-
-Do not invent new top-level folders.
+- Current architecture
+- Relevant files
+- Existing implementation
+- Potential conflicts
+- Assumptions (if any)
 
 ---
-
-# Coding Standards
-
-Produce production-quality code.
-
-Prefer:
-
-- Small modules
-- Single responsibility
-- Reusable components
-- Readable naming
-- Clean architecture
-
-Avoid:
-
-- Large files
-- Deep nesting
-- Duplicate logic
-- Hardcoded values
-- Dead code
-
----
-
-# User Interface
-
-Career OS should resemble modern productivity software.
-
-Visual inspiration:
-
-- Notion
-- Linear
-- GitHub
-- Raycast
-
-Not:
-
-- Gaming dashboards
-- Marketing landing pages
-- Flashy admin templates
-
-Use:
-
-- Clean spacing
-- Neutral colors
-- Professional typography
-- Minimal animations
-
----
-
-# Code Organization
-
-Separate:
-
-UI
-
-Business Logic
-
-Services
-
-Utilities
-
-Data
-
-Do not mix responsibilities.
-
----
-
-# Deliverables
-
-For every task provide:
 
 ## Files Created
 
-List every new file.
+List every newly created file.
 
 ---
 
@@ -193,81 +136,73 @@ List every modified file.
 
 ---
 
-## Explanation
+## Complete Code
 
-Briefly explain:
+Provide the complete contents of every created file.
 
-- What was implemented.
-- Why.
-- How it satisfies the task.
+For modified files, provide either:
+
+- complete updated file
+
+or
+
+- minimal patch
+
+depending on which is smaller and clearer.
 
 ---
 
-## Manual Testing
+## Architecture Explanation
 
-Describe how the feature should be tested.
+Explain:
+
+- what changed
+- why
+- how it integrates with the repository
+- how it follows the ADRs
+
+---
+
+## Manual Testing Steps
+
+Provide step-by-step verification.
 
 ---
 
 ## Acceptance Checklist
 
-Verify every acceptance criterion.
-
-Example:
-
-✓ Responsive
-
-✓ Navigation works
-
-✓ No console errors
-
-✓ Architecture preserved
-
-✓ Ready for commit
+Verify every requirement from the task.
 
 ---
 
-## Suggested Commit
+## Repository State Disclaimer
 
-Provide one Conventional Commit message.
+State whether the implementation was based on:
 
-Example:
+- the actual inspected repository
 
-feat: implement application shell
+or
 
----
-
-# Quality Checklist
-
-Before finishing, verify:
-
-- No syntax errors.
-- No console errors.
-- No unused imports.
-- No duplicate logic.
-- Responsive layout where applicable.
-- Components follow repository architecture.
+- assumptions due to repository access limitations.
 
 ---
 
-# If Blocked
+## Suggested Commit Message
 
-If implementation cannot continue because information is missing:
+Provide a Conventional Commit message.
+
+---
+
+# Important
+
+If the repository differs from the task specification:
+
+STOP.
+
+Explain the conflict.
+
+Do not silently redesign the repository.
 
 Do not guess.
 
-Clearly explain:
-
-- What information is required.
-- Why it is required.
-- The recommended next step.
-
----
-
-# Final Goal
-
-Every completed task should leave Career OS in a deployable state.
-
-The application should become progressively more complete after every task without requiring future rewrites.
-
-Think like a senior software engineer building a real product—not a coding assistant generating isolated examples.
+Wait for clarification if necessary.

@@ -50,6 +50,38 @@ If additional improvements are discovered:
 
 List them separately under:
 
+# Engineering Philosophy
+
+The objective is to build a stable, maintainable system through incremental engineering.
+
+Always prefer:
+
+- Structural composition over configurable APIs.
+- Simple implementations over speculative abstractions.
+- Repository preservation over unnecessary refactoring.
+- Reusable architecture only when multiple concrete implementations exist.
+
+Follow the YAGNI ("You Aren't Gonna Need It") principle.
+
+Do not introduce:
+
+- reusable props
+- render props
+- slots
+- children APIs
+- configurable interfaces
+- extension points
+
+unless they are explicitly required by the Engineering Specification or there are at least two concrete use cases already present in the repository.
+
+Do not generalize from a single implementation.
+
+If only one page, component, or module currently exists, implement only what that implementation requires.
+
+When uncertain between a simpler and a more flexible solution, choose the simpler solution and explain the tradeoff in the Architecture Explanation section.
+
+Every abstraction should solve an existing problem—not a hypothetical future one.
+
 ## Recommendations
 
 Do not implement them automatically.

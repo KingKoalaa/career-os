@@ -1,11 +1,11 @@
 import {
-  Home,
-  Briefcase,
-  BookOpen,
-  Rocket,
-  Workflow,
-  FolderOpen,
-  Settings,
+    Home,
+    Briefcase,
+    BookOpen,
+    Rocket,
+    Workflow,
+    FolderOpen,
+    Settings,
 } from 'lucide-react';
 
 /**
@@ -19,11 +19,11 @@ import {
  * Order is significant and must be preserved (TASK-M1-002).
  */
 export const navigationConfig = [
-  { id: 'home', label: 'Home', icon: Home },
-  { id: 'career', label: 'Career', icon: Briefcase },
-  { id: 'knowledge', label: 'Knowledge', icon: BookOpen },
-  { id: 'projects', label: 'Projects', icon: Rocket },
-  { id: 'automation', label: 'Automation', icon: Workflow },
-  { id: 'assets', label: 'Assets', icon: FolderOpen },
-  { id: 'settings', label: 'Settings', icon: Settings },
+    { id: 'home', label: 'Home', icon: Home, path: '/' },
+    { id: 'career', label: 'Career', icon: Briefcase },
+    { id: 'knowledge', label: 'Knowledge', icon: BookOpen },
+    { id: 'projects', label: 'Projects', icon: Rocket },
+    { id: 'automation', label: 'Automation', icon: Workflow },
+    { id: 'assets', label: 'Assets', icon: FolderOpen },
+    { id: 'settings', label: 'Settings', icon: Settings },
 ];

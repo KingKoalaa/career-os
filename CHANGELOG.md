@@ -76,3 +76,16 @@ This project follows an incremental engineering workflow where each implementati
 ### Changed
 
 - Refactored Header into a reusable three-section framework.
+
+## M1-004 — Page Layout Framework
+
+### Added
+
+- PageLayout
+- PageHeader
+- PageContent
+
+### Changed
+
+- Replaced the temporary Home splash screen with the new Page Layout framework.
+- Improved semantic HTML by using `<main>` and `<section>` for the primary page structure.

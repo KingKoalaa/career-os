@@ -89,3 +89,21 @@ This project follows an incremental engineering workflow where each implementati
 
 - Replaced the temporary Home splash screen with the new Page Layout framework.
 - Improved semantic HTML by using `<main>` and `<section>` for the primary page structure.
+
+## [Unreleased]
+
+### Added
+- Introduced routing foundation for Career OS.
+- Enabled React Router navigation for the Home workspace.
+- Added `path` metadata to the Home navigation configuration.
+- Sidebar now derives active navigation state from the current route.
+- Home navigation item now routes to `/`.
+- Remaining workspace navigation items remain intentionally non-routable pending future milestones.
+
+### Changed
+- Sidebar now renders navigable and non-navigable items based on the navigation configuration.
+- Active state is now determined using the current route instead of a hardcoded index.
+
+### Preserved
+- NavigationItem remains a purely presentational component.
+- AppRouter, AppLayout, RootLayout, Header, WorkspaceContainer, and application shell architecture remain unchanged.

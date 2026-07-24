@@ -111,6 +111,23 @@ Implemented:
 - Improved responsive layout
 - Preserved original dashboard visual language
 
+### ✅ M2-005
+
+Dashboard Widgets
+
+Implemented:
+
+- Resume Progress
+- Active Applications
+- Portfolio Status
+- Certification Progress
+- Weekly Goals
+- Recent Activity (updated)
+
+Replaced "Today's Focus" and "Upcoming Modules" placeholders. Quick Actions preserved unchanged. Static, presentation-only.
+
+A developer comment above the widget section documents that the values are intentional static placeholders pending a future data/business logic milestone.
+
 ---
 
 # Current Routing
@@ -143,9 +160,12 @@ Shared Components
 Dashboard
 
 - Quick Actions
-- Today's Focus
+- Resume Progress
+- Active Applications
+- Portfolio Status
+- Certification Progress
+- Weekly Goals
 - Recent Activity
-- Upcoming Modules
 
 All currently presentation-only.
 
@@ -176,8 +196,4 @@ Known items:
 
 # Next Approved Task
 
-## TASK-M2-005
-
-Dashboard Widgets
-
-This task introduces the first functional dashboard widgets while preserving the current architecture and design system.
+None. TASK-M2-005 (Dashboard Widgets) is complete; next Milestone 2 task not yet approved.

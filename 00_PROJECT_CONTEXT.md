@@ -125,6 +125,31 @@ No reusable dashboard framework introduced.
 
 ---
 
+### ✅ TASK-M2-005
+
+Dashboard Widgets
+
+Implemented:
+
+- Resume Progress
+- Active Applications
+- Portfolio Status
+- Certification Progress
+- Weekly Goals
+- Recent Activity (updated)
+
+Replaced the "Today's Focus" and "Upcoming Modules" placeholder sections with the widgets above. Quick Actions preserved unchanged.
+
+Static presentation only.
+
+No business logic.
+
+No new reusable dashboard framework.
+
+A developer comment above the widget section clarifies that the widget values are intentional static placeholders, to be replaced by real application data in a future data/business logic milestone.
+
+---
+
 # Current Architecture
 
 Application
@@ -210,17 +235,4 @@ Strictly.
 
 # Next Task
 
-## TASK-M2-005
-
-Dashboard Widgets
-
-Planned widgets include:
-
-- Resume Progress
-- Active Job Applications
-- Certification Progress
-- Portfolio Status
-- Weekly Goals
-- Recent Activity
-
-This milestone introduces the first dashboard widgets while remaining presentation-first before business logic is added.
+Milestone 2 dashboard widgets are complete (TASK-M2-005). Next task not yet approved.

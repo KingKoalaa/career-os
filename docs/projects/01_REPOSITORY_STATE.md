@@ -1,41 +1,119 @@
 # Repository State
 
-## Current Architecture
+Repository
+
+career-os
+
+Branch
+
+main
+
+Status
+
+Active Development
+
+---
+
+# Technology Stack
+
+- React 18
+- Vite 5
+- Tailwind CSS
+- React Router
+- Vitest
+- Lucide React
+
+---
+
+# Current Folder Structure
 
 ```
-BrowserRouter
-    │
-    ▼
-AppRouter
-    │
-    ▼
-RootLayout
-    │
-    ▼
-AppLayout
-    ├── Header
-    ├── Sidebar
-    └── WorkspaceContainer
-            │
-            ▼
-          Outlet
-            │
-            ▼
-Workspace Pages
-    ├── Home
-    ├── Career
-    ├── Knowledge
-    ├── Projects
-    ├── Automation
-    ├── Assets
-    └── Settings
+app/
+├── components/
+├── config/
+├── layouts/
+├── pages/
+├── routes/
+├── services/
+├── styles/
+
+docs/
+├── ADR/
+├── backlog/
+
+public/
+
+tests/
+
+tools/
+
+workspace/
 ```
 
 ---
 
-## Routing
+# Milestone Status
 
-Implemented routes
+## Milestone 0
+
+✅ Complete
+
+Repository bootstrap completed.
+
+---
+
+## Milestone 1
+
+✅ Complete
+
+Application shell completed.
+
+Includes:
+
+- Root Layout
+- App Layout
+- Sidebar
+- Header
+- Navigation
+- Workspace Container
+- Page Layout
+
+---
+
+## Milestone 2
+
+Status
+
+In Progress
+
+Completed
+
+### ✅ M2-001
+
+Routing Foundation
+
+### ✅ M2-002
+
+Workspace Routing Expansion
+
+### ✅ M2-003
+
+Home Dashboard Skeleton
+
+### ✅ M2-004
+
+Home Dashboard Layout Refinement
+
+Implemented:
+
+- Centered dashboard container
+- Improved spacing
+- Improved responsive layout
+- Preserved original dashboard visual language
+
+---
+
+# Current Routing
 
 | Route | Status |
 |--------|--------|
@@ -47,79 +125,59 @@ Implemented routes
 | /assets | ✅ |
 | /settings | ✅ |
 
-Routing is configuration-driven through React Router.
-
-Sidebar navigation derives its active state from the current route.
-
 ---
 
-## Shared Layout Components
+# Current UI Foundation
 
-Reusable page framework
-
-- PageLayout
-- PageHeader
-- PageContent
-
-Application shell
+Shared Components
 
 - RootLayout
 - AppLayout
 - Header
 - Sidebar
-- WorkspaceContainer
+- NavigationItem
+- PageLayout
+- PageHeader
+- PageContent
 
----
-
-## Home Workspace
-
-The Home workspace now serves as the application's landing dashboard.
-
-Current dashboard sections:
+Dashboard
 
 - Quick Actions
 - Today's Focus
 - Recent Activity
 - Upcoming Modules
 
-Current implementation characteristics
-
-- Static
-- Presentation-only
-- No reusable dashboard framework
-- No business logic
-- No application state
-- No persistence
-- No API integration
-
-This implementation intentionally follows ADR-001 (Replaceability First) and the project's YAGNI philosophy.
+All currently presentation-only.
 
 ---
 
-## Navigation
+# Testing Status
 
-Navigation remains configuration-driven.
+Latest Verification
 
-Current workspaces
+✅ npm run build
 
-- Home
-- Career
-- Knowledge
-- Projects
-- Automation
-- Assets
-- Settings
+Pass
 
-Only navigation configuration changes are required when adding future workspaces.
+✅ npm test
+
+Pass
 
 ---
 
-## Build Status
+# Technical Debt
 
-Latest verification
+Known items:
 
-- ✅ npm install
-- ✅ npm run build
-- ✅ npm run test
+- Legacy `app/components/HomePage.jsx` remains orphaned from earlier development.
+- Documentation should continue to be synchronized after every completed backlog task.
 
-Repository status is stable and ready for the next backlog task.
+---
+
+# Next Approved Task
+
+## TASK-M2-005
+
+Dashboard Widgets
+
+This task introduces the first functional dashboard widgets while preserving the current architecture and design system.

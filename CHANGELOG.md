@@ -303,3 +303,58 @@ TASK-M2-003
 (Home Dashboard Skeleton)
 
 The Home workspace will transition from an "under construction" placeholder into the first functional dashboard using the newly established workspace framework.
+
+# Changelog
+
+All notable changes to Career OS are documented here.
+
+This project follows semantic milestones rather than traditional version numbers.
+
+---
+
+## [Unreleased]
+
+### Added
+
+#### TASK-M2-003 — Home Dashboard Skeleton
+
+Introduced the first static dashboard for the Home workspace.
+
+The temporary placeholder has been replaced with a presentation-only dashboard while preserving the existing application shell and routing architecture.
+
+**Dashboard sections**
+
+- Quick Actions
+  - Resume
+  - Portfolio
+  - Job Tracker
+  - Certifications
+- Today's Focus
+- Recent Activity
+- Upcoming Modules
+  - Career
+  - Knowledge
+  - Projects
+  - Automation
+  - Assets
+  - Settings
+
+### Changed
+
+- Replaced the Home placeholder message with a structured dashboard layout.
+- Continued using the existing `PageLayout` framework.
+- Preserved the existing Header, Sidebar, WorkspaceContainer, RootLayout, and routing architecture.
+- Kept the dashboard entirely presentation-only with no business logic, state, persistence, or API integration.
+
+### Refactored
+
+- Removed temporary `quickActions` and `upcomingModules` arrays.
+- Inlined all static dashboard content directly into `Home/index.jsx` following the project's YAGNI philosophy.
+- Avoided introducing reusable dashboard components or configuration objects before a second concrete use case exists.
+
+### Verified
+
+- `npm run build` passes successfully.
+- Existing test suite continues to pass.
+- Existing routing remains unchanged.
+- Existing application shell remains unchanged.

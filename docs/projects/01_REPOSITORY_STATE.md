@@ -1,107 +1,106 @@
-# 01_REPOSITORY_STATE.md
+# Repository State
 
-Version: 0.4
-Last Updated: July 2026
-
----
-
-# Purpose
-
-This document describes the current physical repository structure.
-
-Unlike the architecture document, this file should always mirror the actual repository tree.
-
-If a file or folder is added, removed, or renamed, this document should be updated.
-
----
-
-# Current Repository Structure
+## Current Architecture
 
 ```
-career-os/
-
-├── app/
-│
-├── components/
-│   ├── Header.jsx
-│   ├── HeaderBrand.jsx
-│   ├── HeaderWorkspace.jsx
-│   ├── HeaderActions.jsx
-│   ├── NavigationItem.jsx
-│   ├── PageHeader.jsx
-│   ├── PageContent.jsx
-│   ├── Sidebar.jsx
-│   └── WorkspaceContainer.jsx
-│
-├── config/
-│   └── navigation.js
-│
-├── layouts/
-│   ├── AppLayout.jsx
-│   ├── RootLayout.jsx
-│   └── PageLayout.jsx
-│
-├── pages/
-│   └── HomePage.jsx
-│
-├── routes/
-│   └── AppRouter.jsx
-│
-├── styles/
-│   └── index.css
-│
-├── main.jsx
-├── App.jsx
-│
-├── docs/
-│
-├── prompts/
-│
-├── public/
-│
-├── services/
-│
-├── templates/
-│
-├── tests/
-│
-├── tools/
-│
-└── workspace/
+BrowserRouter
+    │
+    ▼
+AppRouter
+    │
+    ▼
+RootLayout
+    │
+    ▼
+AppLayout
+    ├── Header
+    ├── Sidebar
+    └── WorkspaceContainer
+            │
+            ▼
+          Outlet
+            │
+            ▼
+Workspace Pages
+    ├── Home
+    ├── Career
+    ├── Knowledge
+    ├── Projects
+    ├── Automation
+    ├── Assets
+    └── Settings
 ```
 
 ---
 
-# Current Routing
+## Routing
 
-Implemented
+Implemented routes
 
-```
-/
-```
+| Route | Status |
+|--------|--------|
+| / | ✅ |
+| /career | ✅ |
+| /knowledge | ✅ |
+| /projects | ✅ |
+| /automation | ✅ |
+| /assets | ✅ |
+| /settings | ✅ |
 
-Reserved
+Routing is configuration-driven through React Router.
 
-```
-/career
-/knowledge
-/projects
-/automation
-/assets
-/settings
-```
+Sidebar navigation derives its active state from the current route.
 
 ---
 
-# Current Navigation Configuration
+## Shared Layout Components
 
-Location
+Reusable page framework
 
-```
-app/config/navigation.js
-```
+- PageLayout
+- PageHeader
+- PageContent
 
-Contains
+Application shell
+
+- RootLayout
+- AppLayout
+- Header
+- Sidebar
+- WorkspaceContainer
+
+---
+
+## Home Workspace
+
+The Home workspace now serves as the application's landing dashboard.
+
+Current dashboard sections:
+
+- Quick Actions
+- Today's Focus
+- Recent Activity
+- Upcoming Modules
+
+Current implementation characteristics
+
+- Static
+- Presentation-only
+- No reusable dashboard framework
+- No business logic
+- No application state
+- No persistence
+- No API integration
+
+This implementation intentionally follows ADR-001 (Replaceability First) and the project's YAGNI philosophy.
+
+---
+
+## Navigation
+
+Navigation remains configuration-driven.
+
+Current workspaces
 
 - Home
 - Career
@@ -111,72 +110,16 @@ Contains
 - Assets
 - Settings
 
-Only Home currently contains
-
-```
-path: "/"
-```
-
-The remaining workspaces intentionally have no route.
+Only navigation configuration changes are required when adding future workspaces.
 
 ---
 
-# Current Layout Components
+## Build Status
 
-Application Shell
+Latest verification
 
-```
-AppLayout
-├── Header
-├── Sidebar
-└── WorkspaceContainer
-```
+- ✅ npm install
+- ✅ npm run build
+- ✅ npm run test
 
-Header
-
-```
-Header
-├── HeaderBrand
-├── HeaderWorkspace
-└── HeaderActions
-```
-
-Page
-
-```
-PageLayout
-├── PageHeader
-└── PageContent
-```
-
----
-
-# Components That Must Remain Presentation-Only
-
-- Header
-- HeaderBrand
-- HeaderWorkspace
-- HeaderActions
-- NavigationItem
-- PageLayout
-- PageHeader
-- PageContent
-- WorkspaceContainer
-
-Business logic should never be introduced into these components.
-
----
-
-# Current Status
-
-Repository Status
-
-✅ Stable
-
-Milestone 1 Complete
-
-Milestone 2 Started
-
-Current Active Task
-
-TASK-M2-002
+Repository status is stable and ready for the next backlog task.

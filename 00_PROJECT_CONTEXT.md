@@ -1,54 +1,78 @@
-# Current Progress
+# Career OS — Project Context
 
-## Milestone 0 — Project Foundation
-✅ Complete
+## Project
 
-- Repository initialized
-- React + Vite configured
-- Tailwind CSS configured
-- React Router configured
-- PWA foundation configured
-- Repository standards established
+Career OS
+
+A personal operating system for managing:
+
+- Career
+- Knowledge
+- Projects
+- Automation
+- Assets
+
+using a clean desktop-first workspace.
 
 ---
 
-## Milestone 1 — Application Shell
-✅ Complete
+# Current Phase
 
-Completed Tasks
+Milestone 2 — Workspace Foundation
 
-- TASK-M1-001 — Root Application Layout
-- TASK-M1-002 — Sidebar Navigation
-- TASK-M1-003 — Workspace Container
-- TASK-M1-004 — Page Layout Framework
+---
 
-Deliverables
+# Completed Milestones
 
-- RootLayout
-- AppLayout
-- Header
+## Milestone 0
+
+✅ Repository Bootstrap
+
+- React
+- Vite
+- Tailwind
+- React Router
+- Folder architecture
+- Engineering documentation
+
+---
+
+## Milestone 1
+
+✅ Application Shell
+
+Implemented:
+
+- Root Layout
+- App Layout
 - Sidebar
-- Navigation configuration
-- NavigationItem
-- WorkspaceContainer
-- Shared PageLayout
-- Shared PageHeader
-- Shared PageContent
+- Header
+- Navigation
+- Workspace Container
+- Page Layout framework
+- Responsive application shell
 
 ---
 
-## Milestone 2 — Workspace Foundation
-🚧 In Progress
+## Milestone 2
 
-Completed
+### ✅ TASK-M2-001
 
-- ✅ TASK-M2-001 — Workspace Module Foundation
-- ✅ TASK-M2-002 — Workspace Routing Expansion
-- ✅ TASK-M2-003 — Home Dashboard Skeleton
+Routing Foundation
 
-Current State
+Implemented:
 
-The application now contains seven routed workspace modules:
+- React Router integration
+- Root route
+- Sidebar routing support
+
+---
+
+### ✅ TASK-M2-002
+
+Workspace Routing Expansion
+
+Implemented:
 
 - Home
 - Career
@@ -58,19 +82,145 @@ The application now contains seven routed workspace modules:
 - Assets
 - Settings
 
-The Home workspace now displays a static dashboard skeleton consisting of:
+Each workspace now has:
+
+- Route
+- Placeholder page
+- Shared PageLayout
+
+---
+
+### ✅ TASK-M2-003
+
+Home Dashboard Skeleton
+
+Implemented:
 
 - Quick Actions
 - Today's Focus
 - Recent Activity
 - Upcoming Modules
 
-The dashboard is intentionally presentation-only and follows the project's YAGNI philosophy.
+Static presentation only.
 
-No business logic, persistence, API integration, or reusable dashboard framework has been introduced.
+No business logic.
 
-Remaining Tasks
+---
 
-- TASK-M2-004
-- TASK-M2-005
-- Remaining Milestone 2 backlog
+### ✅ TASK-M2-004
+
+Home Dashboard Layout Refinement
+
+Implemented:
+
+- Improved desktop whitespace
+- Centered content container
+- Better spacing hierarchy
+- Improved tablet responsiveness
+- Consistent dashboard padding
+
+No business logic added.
+
+No reusable dashboard framework introduced.
+
+---
+
+# Current Architecture
+
+Application
+
+RootLayout
+
+↓
+
+AppLayout
+
+↓
+
+Header
+
+Sidebar
+
+↓
+
+WorkspaceContainer
+
+↓
+
+React Router Outlet
+
+↓
+
+Workspace Page
+
+↓
+
+PageLayout
+
+├── PageHeader
+
+└── PageContent
+
+---
+
+# Current Routing
+
+/
+
+Home
+
+/career
+
+Career
+
+/knowledge
+
+Knowledge
+
+/projects
+
+Projects
+
+/automation
+
+Automation
+
+/assets
+
+Assets
+
+/settings
+
+Settings
+
+---
+
+# Engineering Principles
+
+Current project follows:
+
+- ADR-001
+- ADR-002
+- Engineering Playbook
+- Claude Engineering Guide
+
+Strictly.
+
+---
+
+# Next Task
+
+## TASK-M2-005
+
+Dashboard Widgets
+
+Planned widgets include:
+
+- Resume Progress
+- Active Job Applications
+- Certification Progress
+- Portfolio Status
+- Weekly Goals
+- Recent Activity
+
+This milestone introduces the first dashboard widgets while remaining presentation-first before business logic is added.

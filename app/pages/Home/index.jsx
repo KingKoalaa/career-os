@@ -1,11 +1,10 @@
 import { FileText, Briefcase, ClipboardList, Award } from 'lucide-react';
 import PageLayout from '../../components/PageLayout';
 
-// Home workspace dashboard (TASK-M2-003, refined in TASK-M2-004,
-// widgets added in TASK-M2-005).
+// Home workspace dashboard (TASK-M2-003, refined in TASK-M2-004).
 //
 // Static, presentation-only layout. No state, no data loading, no
-// business logic — see TASK-M2-005 out-of-scope list. Content that
+// business logic — see TASK-M2-004 out-of-scope list. Content that
 // exists only once is written directly into the JSX rather than
 // mapped from an array, since a reusable data structure is not
 // justified for content with no repetition (YAGNI, ADR-001). All
@@ -14,25 +13,15 @@ import PageLayout from '../../components/PageLayout';
 // yet justified either. Future milestones can extract shared pieces
 // once more than one workspace needs them.
 //
-// TASK-M2-005 replaces the placeholder "Today's Focus", "Recent
-// Activity", and "Upcoming Modules" sections from TASK-M2-003 with
-// six realistic dashboard widgets (Resume Progress, Active
-// Applications, Portfolio Status, Certification Progress, Weekly
-// Goals, Recent Activity) arranged in the hierarchy the task
-// specifies. Quick Actions is preserved unchanged. Every widget
-// reuses the existing card pattern (rounded-xl border border-slate-200
-// bg-white p-6) and the 8px spacing scale already in use
-// (gap-4/16, gap-6/24, gap-12/48) per ADR-002 — no new visual
-// language is introduced. Per the task's design constraints, no
-// charts, progress circles, badges, or animations are used anywhere
-// below: progress and status are communicated with plain typography
-// (label/value rows, stat numbers, and lists) only.
-//
 // TASK-M2-004 constrains the content column to a readable max width
 // so the dashboard stays balanced on wide desktop viewports instead
 // of stretching full-bleed (ADR-002 "Desktop: balanced dashboard,
-// clean whitespace"). The original TASK-M2-003 Quick Action card
-// pattern (horizontal icon+label cards) is preserved unchanged.
+// clean whitespace"). All spacing below stays on the 8px grid
+// (gap-4/16, gap-6/24, gap-12/48, p-6/24) per ADR-002. The original
+// TASK-M2-003 visual patterns — horizontal icon+label Quick Action
+// cards, and a single list card for Upcoming Modules — are preserved
+// unchanged; this task only refines spacing, hierarchy, and
+// responsive breakpoints.
 export default function HomePage() {
   return (
     <PageLayout title="Home" subtitle="Welcome to Career OS.">
@@ -59,4 +48,36 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/*
+        <section className="grid grid-cols-1 gap-6 md:grid-cols-2">
+          <div>
+            <h2 className="mb-4 text-sm font-semibold text-slate-900">Today's Focus</h2>
+            <div className="rounded-xl border border-slate-200 bg-white p-6">
+              <p className="text-sm text-slate-500">No focus items yet.</p>
+            </div>
+          </div>
+
+          <div>
+            <h2 className="mb-4 text-sm font-semibold text-slate-900">Recent Activity</h2>
+            <div className="rounded-xl border border-slate-200 bg-white p-6">
+              <p className="text-sm text-slate-500">No recent activity.</p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2 className="mb-4 text-sm font-semibold text-slate-900">Upcoming Modules</h2>
+          <div className="rounded-xl border border-slate-200 bg-white p-6">
+            <ul className="flex flex-col gap-4">
+              <li className="text-sm text-slate-500">Career</li>
+              <li className="text-sm text-slate-500">Knowledge</li>
+              <li className="text-sm text-slate-500">Projects</li>
+              <li className="text-sm text-slate-500">Automation</li>
+              <li className="text-sm text-slate-500">Assets</li>
+              <li className="text-sm text-slate-500">Settings</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </PageLayout>
+  );
+}

@@ -28,29 +28,11 @@ Milestone 2 — Workspace Foundation
 
 ✅ Repository Bootstrap
 
-- React
-- Vite
-- Tailwind
-- React Router
-- Folder architecture
-- Engineering documentation
-
 ---
 
 ## Milestone 1
 
 ✅ Application Shell
-
-Implemented:
-
-- Root Layout
-- App Layout
-- Sidebar
-- Header
-- Navigation
-- Workspace Container
-- Page Layout framework
-- Responsive application shell
 
 ---
 
@@ -60,70 +42,17 @@ Implemented:
 
 Routing Foundation
 
-Implemented:
-
-- React Router integration
-- Root route
-- Sidebar routing support
-
----
-
 ### ✅ TASK-M2-002
 
 Workspace Routing Expansion
-
-Implemented:
-
-- Home
-- Career
-- Knowledge
-- Projects
-- Automation
-- Assets
-- Settings
-
-Each workspace now has:
-
-- Route
-- Placeholder page
-- Shared PageLayout
-
----
 
 ### ✅ TASK-M2-003
 
 Home Dashboard Skeleton
 
-Implemented:
-
-- Quick Actions
-- Today's Focus
-- Recent Activity
-- Upcoming Modules
-
-Static presentation only.
-
-No business logic.
-
----
-
 ### ✅ TASK-M2-004
 
 Home Dashboard Layout Refinement
-
-Implemented:
-
-- Improved desktop whitespace
-- Centered content container
-- Better spacing hierarchy
-- Improved tablet responsiveness
-- Consistent dashboard padding
-
-No business logic added.
-
-No reusable dashboard framework introduced.
-
----
 
 ### ✅ TASK-M2-005
 
@@ -136,19 +65,7 @@ Implemented:
 - Portfolio Status
 - Certification Progress
 - Weekly Goals
-- Recent Activity (updated)
-
-Replaced the "Today's Focus" and "Upcoming Modules" placeholder sections with the widgets above. Quick Actions preserved unchanged.
-
-Static presentation only.
-
-No business logic.
-
-No new reusable dashboard framework.
-
-A developer comment above the widget section clarifies that the widget values are intentional static placeholders, to be replaced by real application data in a future data/business logic milestone.
-
----
+- Recent Activity
 
 ### ✅ TASK-M2-006
 
@@ -156,25 +73,45 @@ Dashboard Navigation
 
 Implemented:
 
-- Quick Actions cards (Resume, Portfolio, Job Tracker, Certifications) converted to functional navigation using React Router's `<Link>`.
-- Resume and Job Tracker navigate to `/career`, Portfolio navigates to `/projects`, Certifications navigates to `/knowledge`.
-
-No routing changes. No new files. No visual redesign — layout, spacing, typography, and icon placement preserved exactly.
-
----
+- Quick Action cards now navigate to their corresponding workspaces using React Router.
 
 ### ✅ TASK-M2-007
 
-Workspace Page Consistency
+Workspace Landing Pages
 
 Implemented:
 
-- Replaced "Coming Soon" placeholder content on Career, Knowledge, Projects, Automation, Assets, and Settings with standardized workspace landing pages.
-- Each page communicates its purpose (via the PageHeader subtitle) and contains a "Planned Features" card and a "Development Status" card.
+Every non-Home workspace now contains:
 
-All pages continue to reuse the shared PageLayout / PageHeader / PageContent framework and existing card styling per ADR-002.
+- Workspace description
+- Planned Features
+- Development Status
 
-Presentation only. No routing, sidebar, header, or layout architecture changes. No business logic.
+using the shared PageLayout framework.
+
+### ✅ TASK-M2-008
+
+Workspace Empty States
+
+Implemented:
+
+Every non-Home workspace now includes a third section:
+
+- Current Workspace
+
+This section provides:
+
+- Professional empty-state messaging.
+- A short description of future functionality.
+- Consistent presentation using the existing card design.
+
+Presentation only.
+
+No business logic.
+
+No routing changes.
+
+No reusable components introduced.
 
 ---
 
@@ -263,4 +200,6 @@ Strictly.
 
 # Next Task
 
-Milestone 2 workspace page consistency is complete (TASK-M2-007). Next task not yet approved.
+TASK-M2-008 is complete.
+
+Next Milestone 2 backlog item is pending approval.

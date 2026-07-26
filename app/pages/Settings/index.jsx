@@ -46,6 +46,21 @@ export default function SettingsPage() {
             </dl>
           </div>
         </section>
+                <section>
+          <h2 className="mb-4 text-sm font-semibold text-slate-900">
+            Current Workspace
+          </h2>
+          <div className="rounded-xl border border-slate-200 bg-white p-6">
+            <div className="space-y-2">
+              <p className="text-sm text-slate-500">
+                Configure your preferences as new settings become available.
+              </p>
+              <p className="text-sm text-slate-500">
+                Future updates will expand the settings available in this workspace.
+              </p>
+            </div>
+          </div>
+        </section>
       </div>
     </PageLayout>
   );

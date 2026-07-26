@@ -46,6 +46,21 @@ export default function AutomationPage() {
             </dl>
           </div>
         </section>
+                <section>
+          <h2 className="mb-4 text-sm font-semibold text-slate-900">
+            Current Workspace
+          </h2>
+          <div className="rounded-xl border border-slate-200 bg-white p-6">
+            <div className="space-y-2">
+              <p className="text-sm text-slate-500">
+                No automation workflows have been created.
+              </p>
+              <p className="text-sm text-slate-500">
+                Future updates will allow you to build and manage automation workflows here.
+              </p>
+            </div>
+          </div>
+        </section>
       </div>
     </PageLayout>
   );

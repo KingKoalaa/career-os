@@ -163,6 +163,21 @@ No routing changes. No new files. No visual redesign — layout, spacing, typogr
 
 ---
 
+### ✅ TASK-M2-007
+
+Workspace Page Consistency
+
+Implemented:
+
+- Replaced "Coming Soon" placeholder content on Career, Knowledge, Projects, Automation, Assets, and Settings with standardized workspace landing pages.
+- Each page communicates its purpose (via the PageHeader subtitle) and contains a "Planned Features" card and a "Development Status" card.
+
+All pages continue to reuse the shared PageLayout / PageHeader / PageContent framework and existing card styling per ADR-002.
+
+Presentation only. No routing, sidebar, header, or layout architecture changes. No business logic.
+
+---
+
 # Current Architecture
 
 Application
@@ -248,4 +263,4 @@ Strictly.
 
 # Next Task
 
-Milestone 2 dashboard navigation is complete (TASK-M2-006). Next task not yet approved.
+Milestone 2 workspace page consistency is complete (TASK-M2-007). Next task not yet approved.

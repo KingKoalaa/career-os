@@ -139,6 +139,17 @@ Implemented:
 
 No routing changes. No component extraction. Layout, spacing, typography, and icon placement unchanged; only interaction was added.
 
+### ✅ M2-007
+
+Workspace Page Consistency
+
+Implemented:
+
+- Career, Knowledge, Projects, Automation, Assets, and Settings replaced their "Coming Soon" placeholder content with standardized workspace landing pages.
+- Each page now includes a "Planned Features" card and a "Development Status" card, in addition to the existing PageHeader-driven workspace description.
+
+Reused existing PageLayout / PageHeader / PageContent framework and ADR-002 card styling. No routing, sidebar, header, or layout architecture changes. No business logic, data, or interaction added.
+
 ---
 
 # Current Routing
@@ -178,6 +189,17 @@ Dashboard
 - Weekly Goals
 - Recent Activity
 
+Workspace Landing Pages
+
+- Career
+- Knowledge
+- Projects
+- Automation
+- Assets
+- Settings
+
+Each workspace landing page includes a "Planned Features" card and a "Development Status" card.
+
 All currently presentation-only.
 
 ---
@@ -207,4 +229,4 @@ Known items:
 
 # Next Approved Task
 
-None. TASK-M2-006 (Dashboard Navigation) is complete; next Milestone 2 task not yet approved.
+None. TASK-M2-007 (Workspace Page Consistency) is complete; next Milestone 2 task not yet approved.

@@ -1,8 +1,10 @@
+import { Link } from 'react-router-dom';
 import { FileText, Briefcase, ClipboardList, Award } from 'lucide-react';
 import PageLayout from '../../components/PageLayout';
 
 // Home workspace dashboard (TASK-M2-003, refined in TASK-M2-004,
-// widgets added in TASK-M2-005).
+// widgets added in TASK-M2-005, Quick Actions made navigable in
+// TASK-M2-006).
 //
 // Static, presentation-only layout. No state, no data loading, no
 // business logic — see TASK-M2-005 out-of-scope list. Content that
@@ -40,22 +42,34 @@ export default function HomePage() {
         <section>
           <h2 className="mb-4 text-sm font-semibold text-slate-900">Quick Actions</h2>
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            <div className="flex items-center gap-3 rounded-xl border border-slate-200 bg-white p-6">
+            <Link
+              to="/career"
+              className="flex items-center gap-3 rounded-xl border border-slate-200 bg-white p-6"
+            >
               <FileText className="h-5 w-5 shrink-0 text-slate-500" aria-hidden="true" />
               <span className="text-sm font-medium text-slate-900">Resume</span>
-            </div>
-            <div className="flex items-center gap-3 rounded-xl border border-slate-200 bg-white p-6">
+            </Link>
+            <Link
+              to="/projects"
+              className="flex items-center gap-3 rounded-xl border border-slate-200 bg-white p-6"
+            >
               <Briefcase className="h-5 w-5 shrink-0 text-slate-500" aria-hidden="true" />
               <span className="text-sm font-medium text-slate-900">Portfolio</span>
-            </div>
-            <div className="flex items-center gap-3 rounded-xl border border-slate-200 bg-white p-6">
+            </Link>
+            <Link
+              to="/career"
+              className="flex items-center gap-3 rounded-xl border border-slate-200 bg-white p-6"
+            >
               <ClipboardList className="h-5 w-5 shrink-0 text-slate-500" aria-hidden="true" />
               <span className="text-sm font-medium text-slate-900">Job Tracker</span>
-            </div>
-            <div className="flex items-center gap-3 rounded-xl border border-slate-200 bg-white p-6">
+            </Link>
+            <Link
+              to="/knowledge"
+              className="flex items-center gap-3 rounded-xl border border-slate-200 bg-white p-6"
+            >
               <Award className="h-5 w-5 shrink-0 text-slate-500" aria-hidden="true" />
               <span className="text-sm font-medium text-slate-900">Certifications</span>
-            </div>
+            </Link>
           </div>
         </section>
 

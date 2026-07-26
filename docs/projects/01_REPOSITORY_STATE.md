@@ -128,6 +128,17 @@ Replaced "Today's Focus" and "Upcoming Modules" placeholders. Quick Actions pres
 
 A developer comment above the widget section documents that the values are intentional static placeholders pending a future data/business logic milestone.
 
+### ✅ M2-006
+
+Dashboard Navigation
+
+Implemented:
+
+- Quick Actions cards (Resume, Portfolio, Job Tracker, Certifications) wrapped in React Router `<Link>` elements.
+- Resume → `/career`, Portfolio → `/projects`, Job Tracker → `/career`, Certifications → `/knowledge`.
+
+No routing changes. No component extraction. Layout, spacing, typography, and icon placement unchanged; only interaction was added.
+
 ---
 
 # Current Routing
@@ -196,4 +207,4 @@ Known items:
 
 # Next Approved Task
 
-None. TASK-M2-005 (Dashboard Widgets) is complete; next Milestone 2 task not yet approved.
+None. TASK-M2-006 (Dashboard Navigation) is complete; next Milestone 2 task not yet approved.

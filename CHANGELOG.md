@@ -46,3 +46,10 @@ The format follows Keep a Changelog principles and Semantic Versioning during de
 
 - Eliminated hardcoded Home-only layout behavior.
 - Standardized workspace routing architecture.
+
+## TASK-M2-006 — Dashboard Navigation
+
+### Changed
+
+- Home dashboard's Quick Actions cards (Resume, Portfolio, Job Tracker, Certifications) are now functional navigation links using React Router's `<Link>`, routing to `/career`, `/projects`, `/career`, and `/knowledge` respectively.
+- Card markup, spacing, typography, and icon placement are unchanged; only interaction behavior was added.

@@ -150,6 +150,19 @@ A developer comment above the widget section clarifies that the widget values ar
 
 ---
 
+### ✅ TASK-M2-006
+
+Dashboard Navigation
+
+Implemented:
+
+- Quick Actions cards (Resume, Portfolio, Job Tracker, Certifications) converted to functional navigation using React Router's `<Link>`.
+- Resume and Job Tracker navigate to `/career`, Portfolio navigates to `/projects`, Certifications navigates to `/knowledge`.
+
+No routing changes. No new files. No visual redesign — layout, spacing, typography, and icon placement preserved exactly.
+
+---
+
 # Current Architecture
 
 Application
@@ -235,4 +248,4 @@ Strictly.
 
 # Next Task
 
-Milestone 2 dashboard widgets are complete (TASK-M2-005). Next task not yet approved.
+Milestone 2 dashboard navigation is complete (TASK-M2-006). Next task not yet approved.

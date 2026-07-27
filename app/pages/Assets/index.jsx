@@ -96,6 +96,23 @@ export default function AssetsPage() {
             </div>
           </div>
         </section>
+        <section>
+          <h2 className="mb-4 text-sm font-semibold text-slate-900">
+            Information
+          </h2>
+          <div className="rounded-xl border border-slate-200 bg-white p-6">
+            <div className="space-y-2">
+              <p className="text-sm font-semibold text-slate-900">
+                Workspace Status
+              </p>
+              <p className="text-sm text-slate-500">
+                This workspace is currently operating in presentation mode.
+                Interactive functionality, data management, and automation
+                features will be introduced during future milestones.
+              </p>
+            </div>
+          </div>
+        </section>
       </div>
     </PageLayout>
   );

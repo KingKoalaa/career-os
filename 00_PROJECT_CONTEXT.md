@@ -243,8 +243,44 @@ Each workspace now contains:
 
 ---
 
+---
+
+### ✅ TASK-M2-011
+
+Workspace Information Banner
+
+Implemented:
+
+- Added a presentation-only **Information** section to all six workspace pages.
+- Added a **Workspace Status** card describing the current presentation-only state of each workspace.
+- Reused the existing PageLayout structure and card styling.
+- Preserved the established workspace hierarchy.
+
+Static presentation only.
+
+No business logic.
+
+No routing changes.
+
+No reusable components.
+
+---
+
+# Current Workspace Structure
+
+Each workspace now contains:
+
+1. Planned Features
+2. Development Status
+3. Current Workspace
+4. Section Navigation
+5. Workspace Overview
+6. Information
+
+---
+
 # Next Task
 
-TASK-M2-010 is complete.
+TASK-M2-011 is complete.
 
 Next Milestone 2 task not yet approved.

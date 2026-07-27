@@ -234,8 +234,65 @@ All presentation-only.
 
 ---
 
+### ✅ M2-011
+
+Workspace Information Banner
+
+Implemented:
+
+- Information section for:
+  - Career
+  - Knowledge
+  - Projects
+  - Automation
+  - Assets
+  - Settings
+- Workspace Status presentation card.
+- Consistent card styling across all workspace pages.
+- Presentation only.
+
+---
+
+# Current UI Foundation
+
+Shared Components
+
+- RootLayout
+- AppLayout
+- Header
+- Sidebar
+- NavigationItem
+- PageLayout
+- PageHeader
+- PageContent
+
+Home Dashboard
+
+- Quick Actions
+- Resume Progress
+- Active Applications
+- Portfolio Status
+- Certification Progress
+- Weekly Goals
+- Recent Activity
+
+Workspace Pages
+
+Each workspace now includes:
+
+- Planned Features
+- Development Status
+- Current Workspace
+- Section Navigation
+- Workspace Overview
+- Information
+
+All presentation-only.
+
+---
+
 # Next Approved Task
 
 None.
 
-TASK-M2-010 (Workspace Overview Statistics) is complete.
+TASK-M2-011 (Workspace Information Banner) is complete.

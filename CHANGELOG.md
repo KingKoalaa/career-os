@@ -104,3 +104,25 @@ The format follows Keep a Changelog principles and Semantic Versioning during de
 - No routing changes.
 - No reusable components introduced.
 - Existing workspace layout preserved.
+
+## TASK-M2-011 — Workspace Information Banner
+
+### Added
+
+- Added a new **Information** section to every workspace page:
+  - Career
+  - Knowledge
+  - Projects
+  - Automation
+  - Assets
+  - Settings
+- Each workspace now includes a presentation-only **Workspace Status** card explaining that the workspace is currently operating in presentation mode and that interactive functionality will be introduced in future milestones.
+- Reused the existing card styling and typography to maintain visual consistency across all workspace pages.
+
+### Notes
+
+- Presentation only.
+- No business logic.
+- No routing changes.
+- No reusable components introduced.
+- Existing workspace layout preserved.

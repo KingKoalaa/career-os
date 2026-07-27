@@ -82,3 +82,25 @@ The format follows Keep a Changelog principles and Semantic Versioning during de
 - Added presentation-only Section Navigation cards to all workspace landing pages.
 - Introduced a consistent placeholder information architecture for future workspace modules.
 - No routing, navigation, business logic, or interactions added.
+
+## TASK-M2-010 — Workspace Overview Statistics
+
+### Added
+
+- Added a new **Workspace Overview** section to all six workspace landing pages:
+  - Career
+  - Knowledge
+  - Projects
+  - Automation
+  - Assets
+  - Settings
+- Each workspace now includes a presentation-only three-column statistics card using static placeholder values.
+- Statistics follow the existing visual language established on the Home dashboard and reuse the existing typography, spacing, and card styling.
+
+### Notes
+
+- Static presentation only.
+- No business logic.
+- No routing changes.
+- No reusable components introduced.
+- Existing workspace layout preserved.

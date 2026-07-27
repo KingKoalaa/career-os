@@ -178,8 +178,64 @@ Implemented:
 - Future workspace structure
 - Presentation only
 
+### ✅ M2-010
+
+Workspace Overview Statistics
+
+Implemented:
+
+- Workspace Overview section for:
+  - Career
+  - Knowledge
+  - Projects
+  - Automation
+  - Assets
+  - Settings
+- Three-column presentation-only statistics cards.
+- Reused Home dashboard statistics styling.
+- No business logic.
+
+---
+
+# Current UI Foundation
+
+Shared Components
+
+- RootLayout
+- AppLayout
+- Header
+- Sidebar
+- NavigationItem
+- PageLayout
+- PageHeader
+- PageContent
+
+Home Dashboard
+
+- Quick Actions
+- Resume Progress
+- Active Applications
+- Portfolio Status
+- Certification Progress
+- Weekly Goals
+- Recent Activity
+
+Workspace Pages
+
+Each workspace now includes:
+
+- Planned Features
+- Development Status
+- Current Workspace
+- Section Navigation
+- Workspace Overview
+
+All presentation-only.
+
+---
+
 # Next Approved Task
 
 None.
 
-TASK-M2-009 complete.
+TASK-M2-010 (Workspace Overview Statistics) is complete.

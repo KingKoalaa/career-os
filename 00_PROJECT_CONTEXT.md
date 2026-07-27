@@ -208,8 +208,43 @@ Implemented:
 - Workspace information architecture preview
 - Presentation only
 
+---
+
+### ✅ TASK-M2-010
+
+Workspace Overview Statistics
+
+Implemented:
+
+- Added a new **Workspace Overview** section to every workspace page.
+- Added presentation-only statistics cards using static placeholder values.
+- Reused the existing Home dashboard statistics visual language.
+- Preserved the existing workspace layout and hierarchy.
+
+Static presentation only.
+
+No business logic.
+
+No routing changes.
+
+No reusable components.
+
+---
+
+# Current Workspace Structure
+
+Each workspace now contains:
+
+1. Planned Features
+2. Development Status
+3. Current Workspace
+4. Section Navigation
+5. Workspace Overview
+
+---
+
 # Next Task
 
-TASK-M2-009 complete.
+TASK-M2-010 is complete.
 
-Next task not yet approved.
+Next Milestone 2 task not yet approved.

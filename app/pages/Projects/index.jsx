@@ -75,6 +75,27 @@ export default function ProjectsPage() {
             </ul>
           </div>
         </section>
+        <section>
+          <h2 className="mb-4 text-sm font-semibold text-slate-900">
+            Workspace Overview
+          </h2>
+          <div className="rounded-xl border border-slate-200 bg-white p-6">
+            <div className="grid grid-cols-3 gap-4">
+              <div className="flex flex-col gap-1">
+                <span className="text-2xl font-semibold text-slate-900">0</span>
+                <span className="text-xs text-slate-500">Projects</span>
+              </div>
+              <div className="flex flex-col gap-1">
+                <span className="text-2xl font-semibold text-slate-900">0</span>
+                <span className="text-xs text-slate-500">Case Studies</span>
+              </div>
+              <div className="flex flex-col gap-1">
+                <span className="text-2xl font-semibold text-slate-900">0</span>
+                <span className="text-xs text-slate-500">Technologies</span>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </PageLayout>
   );

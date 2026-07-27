@@ -61,6 +61,20 @@ export default function ProjectsPage() {
             </div>
           </div>
         </section>
+        <section>
+          <h2 className="mb-4 text-sm font-semibold text-slate-900">
+            Section Navigation
+          </h2>
+          <div className="rounded-xl border border-slate-200 bg-white p-6">
+            <ul className="space-y-2 text-sm text-slate-500">
+              <li>Resume</li>
+              <li>Applications</li>
+              <li>Interviews</li>
+              <li>Companies</li>
+              <li>Career Planning</li>
+            </ul>
+          </div>
+        </section>
       </div>
     </PageLayout>
   );

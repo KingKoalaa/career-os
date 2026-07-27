@@ -74,3 +74,11 @@ The format follows Keep a Changelog principles and Semantic Versioning during de
 ### Fixed
 
 - Standardized workspace presentation across all non-Home pages.
+
+## TASK-M2-009 — Workspace Section Navigation
+
+### Added
+
+- Added presentation-only Section Navigation cards to all workspace landing pages.
+- Introduced a consistent placeholder information architecture for future workspace modules.
+- No routing, navigation, business logic, or interactions added.
